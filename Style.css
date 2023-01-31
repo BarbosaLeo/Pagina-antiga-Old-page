@@ -1,0 +1,153 @@
+body{
+    background-color: #b9b9b9;
+}
+.header{
+    background-color: rgb(30,30,30);
+    overflow: hidden;
+}
+.header a{
+    float: left;
+    display: block;
+    color: #b9b9b9;
+    text-align: center;
+    font-size: xx-large;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.header a:hover{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+div.bg1{
+    color: #f5f5f5;
+    background-image: url("./Public/img/background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15%;
+}
+.quote{
+    font-weight: bold;
+    padding-right: 30%;
+}
+.author{
+    font-size: medium;
+    font-weight: 500;
+    padding-left: 30%;
+}
+div.main{
+    color: rgb(200,200,200);
+    background-color: rgb(45,45,45);
+    padding: 3%;
+}
+.base{
+    font-size: x-large;
+    display: block;
+    color: rgb(200,200,200);
+    text-decoration: none;
+    background-color: rgb(30,30,30);
+    padding-left: 15%;
+    padding-top: 3%; padding-bottom: 3%;
+}
+.base a{
+    color:  #b9b9b9;
+    text-decoration: none;
+}
+.base a:hover{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.images
+.project1
+.project2
+.gameframe{
+    float: left;
+}
+
+img{
+    transition: .3s;
+    padding: 2px;
+    float: left;
+    width: 33%;
+    max-width: 700px;
+}
+
+video{
+    padding: 2px;
+    float: left;
+    width: 33%;
+    max-width: 320px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    margin: 0 auto;
+}
+
+#img{
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-content{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    transition: .2s;
+}
+.close:hover,
+.close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+canvas{
+    float: none;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0,0,0);
+}

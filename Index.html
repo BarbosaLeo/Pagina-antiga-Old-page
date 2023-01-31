@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./Scripts.js"></script>
+    <script src="./Index.js"></script>
+
+</head>
+    <body>
+
+        <div id="root"></div>
+
+        <!-- <div class="header">
+            <a href="#">[PLACEHOLDER]</a>
+        </div> -->
+        
+        <div class="main">
+            <h2>"Hello world!!"</h2>
+
+            <h2>Some of my 3D models - Blender3D</h2>
+            <div class="row">
+                <div class="images">
+                    <img id="img" src="./Public/img/extinguisher_render.png">
+                    <img id="img" src="./Public/img/f15_render.png">
+                    <img id="img" src="./Public/img/SimpleBow_render.png">
+                    <img id="img" src="./Public/img/Jet_render.png">
+                    <img id="img" src="./Public/img/f5-tiger_render.png">
+                </div>
+            </div>
+            <div class="row">
+                <h1>Unity Projects</h1>
+                <h3>WIP - from may/2021 to current time</h1>
+                <div class="images">
+                    <img id="img" src="./Public/img/game_basic_cycle.gif">
+                    <img id="img" src="./Public/img/dash_working.gif">
+                    <img id="img" src="./Public/img/camera_test_pos.gif">
+                </div>
+            </div>
+
+            <div class="row">
+                <h3>Hangar showcase and customization (2020)</h3>
+                <div class="images">
+                    <img id="img" src="./Public/img/hangar_showcase.gif">
+                    <img id="img" src="./Public/img/hangar_customize.gif">
+                </div>
+            </div>
+            
+            <!-- 
+            <div class="row">
+                <div class="modal" id="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                </div>
+            </div> -->
+
+
+            <h2>...and there is a game below too!</progess></h2>
+            <div class="gameframe">
+                <iframe src="https://itch.io/embed/967755" height="167" width="552" frameborder="0"><a href="https://barbosaleo.itch.io/spacefighter">SpaceFighter by BarbosaLeo</a></iframe>
+            </div>
+            <div>
+
+                <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #FFFFFF"></canvas>
+                <script src="Build/InfiniteHangar.loader.js"></script>
+                <script>
+                    createUnityInstance(document.querySelector("#unity-canvas"), {
+                        dataUrl: "/Public/Build/InfiniteHangar.data.unityweb",
+                        frameworkUrl: "/PublicBuild/InfiniteHangar.framework.js.unityweb",
+                        codeUrl: "Build/InfiniteHangar.wasm.unityweb",
+                        streamingAssetsUrl: "StreamingAssets",
+                        companyName: "DefaultCompany",
+                        productName: "Infinite Hangar",
+                        productVersion: "0.1",
+                        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+                        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+                    });
+                </script>
+
+            </div>
+        <div class="base">
+            <b style="font-size: xx-large; padding-bottom: 2%;">Contate-me: </b><br>
+            <i class="fas fa-envelope" style="padding: 1%;"></i><b> leonardo8544@gmail.com<b><br>
+            <i class="fab fa-linkedin" style="padding: 1%;"></i><a href="https://www.linkedin.com/in/leonardo-barbosa-3b4555167/"target="_blank" rel="noopener noreferrer"> Leonardo Barbosa</a><br>
+            <i class="fab fa-github" style="padding: 1%;"></i><a href="https://github.com/BarbosaLeo" target="_blank" rel="noopener noreferrer"> github.com/BarbosaLeo</a><br>
+        </div>
+    </body>
+</html>
